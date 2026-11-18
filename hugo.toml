@@ -1,0 +1,9 @@
+baseURL = "https://example.org/"
+languageCode = "es-AR"
+title = "CIAM | Centro de Información al Menor"
+defaultContentLanguage = "es"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Una guía clara y cercana sobre tus derechos y dónde pedir ayuda, para niñas, niños y adolescentes en Argentina."
+

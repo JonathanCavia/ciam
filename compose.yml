@@ -1,0 +1,33 @@
+services:
+  hugo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command:
+      - server
+      - --bind
+      - 0.0.0.0
+      - --port
+      - "1313"
+      - --baseURL
+      - http://localhost:1313/
+      - --appendPort=false
+      - --poll
+      - 700ms
+    ports:
+      - "1313:1313"
+    volumes:
+      - .:/src
+    init: true
+
+  tools:
+    image: node:22-alpine
+    working_dir: /src
+    volumes:
+      - .:/src
+      - node_modules:/src/node_modules
+    profiles:
+      - tools
+
+volumes:
+  node_modules:

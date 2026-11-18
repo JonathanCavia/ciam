@@ -1,0 +1,12 @@
+{
+  "name": "ciam-hugo-site",
+  "private": true,
+  "scripts": {
+    "lint": "prettier --check layouts/index.html static/css/site.css static/js/site.js data/jurisdicciones.yaml README.md",
+    "lint:fix": "prettier --write layouts/index.html static/css/site.css static/js/site.js data/jurisdicciones.yaml README.md"
+  },
+  "devDependencies": {
+    "prettier-plugin-go-template": "0.0.15",
+    "prettier": "3.6.2"
+  }
+}

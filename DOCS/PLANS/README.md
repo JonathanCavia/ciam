@@ -14,4 +14,6 @@ Registra en el plan quién aprobó o revisó, la fecha, la decisión y cualquier
 
 ## Planes
 
-Todavía no hay planes de producto registrados.
+| Plan | Estado | Alcance |
+| --- | --- | --- |
+| [0001 — Entorno local con Docker Compose para Hugo](0001-compose-desarrollo-hugo.md) | En curso | Servidor Hugo con hot reload, targets Make y lint/fix en contenedor. |
