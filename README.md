@@ -42,7 +42,13 @@ Si Hugo ya está instalado, desde esta carpeta:
 hugo server --baseURL http://localhost:1313/ --appendPort=false --poll 700ms
 ```
 
-Antes de publicar el sitio, cambiá `baseURL` en `hugo.toml` por el dominio final.
+`hugo.toml` conserva la URL de producción (`https://jonathancavia.github.io/ciam/`); el comando local la reemplaza para servir el sitio en `localhost`.
+
+## Publicar en GitHub Pages
+
+El workflow de GitHub Actions compila el sitio con Hugo y publica el resultado en [https://jonathancavia.github.io/ciam/](https://jonathancavia.github.io/ciam/). Para habilitar la primera publicación, en el repositorio abrí **Settings → Pages → Build and deployment** y elegí **GitHub Actions** como fuente.
+
+Después, cada push a `main` inicia una publicación. También podés iniciarla desde **Actions → Deploy Hugo site to GitHub Pages → Run workflow**. El estado y los errores de cada ejecución aparecen en esa sección de Actions.
 
 ## Actualizar jurisdicciones y recursos
 

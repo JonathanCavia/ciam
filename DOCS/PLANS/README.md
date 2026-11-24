@@ -17,3 +17,4 @@ Registra en el plan quién aprobó o revisó, la fecha, la decisión y cualquier
 | Plan | Estado | Alcance |
 | --- | --- | --- |
 | [0001 — Entorno local con Docker Compose para Hugo](0001-compose-desarrollo-hugo.md) | En curso | Servidor Hugo con hot reload, targets Make y lint/fix en contenedor. |
+| [0002 — Publicación del sitio Hugo en GitHub Pages](0002-github-pages-hugo.md) | Implementado — pendiente de revisión humana | Compilar y publicar el sitio en GitHub Pages con GitHub Actions. |
